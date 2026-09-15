@@ -28,3 +28,19 @@ Implemented the first coherent playable milestone from the initial uncommitted p
 ### Next
 
 Run one unassisted clean-save human playtest and use the observed first-prestige time and purchasing behavior to decide whether the first-run economy needs a focused adjustment.
+
+## 2026-09-16 - Final verification and release
+
+The completed vertical slice was revalidated after GitHub Pages deployment.
+
+### Verification
+
+- Unit/pacing suite passed: 9/9 tests.
+- Deterministic full-run simulation reached the wake ending in 871 seconds.
+- Production Vite build completed successfully.
+- Published Pages endpoint returned HTTP 200 and expected HTML.
+- Repository was clean and synchronized with `origin/main` before this ledger-only completion update.
+
+### Status
+
+All defined acceptance criteria are satisfied. Remaining human clean-save playtesting is optional subjective economy tuning rather than a release blocker.

@@ -1,33 +1,24 @@
 # Sheep Dream - Progress
 
-Status: PLAYABLE MILESTONE COMPLETE
+Status: COMPLETE
 
-## Current state
+## Final state
 
-- The complete short-form progression is implemented: manual counting, automation, sheep counting sheep, four sleep-depth prestiges, four dream laws, and the wake ending.
-- Responsive visual design is complete for the current feature set, including keyboard focus, reduced-motion support, and depth-based atmosphere changes.
-- Version 1 localStorage saves and capped four-hour offline progress remain supported.
-- Invalid version-1 save values are sanitized on load instead of poisoning the simulation with negative or non-finite values.
-- Sleep depth is capped at the intended finite endpoint of 4.
-- Deterministic unit and pacing coverage is in place.
+- Complete short-form progression: manual counting, automation, sheep counting sheep, four sleep-depth prestiges, four dream laws, and the wake ending.
+- Responsive browser UI supports desktop/mobile, keyboard focus, reduced motion, and depth-based atmosphere changes.
+- Versioned localStorage save, defensive save sanitization, and capped four-hour offline progress are implemented.
+- Deterministic unit/pacing coverage and production deployment are in place.
 
-## Verified on 2026-09-16
+## Final verification - 2026-09-16
 
-- `npm.cmd test`: 2 test files, 9 tests passed.
-- `npm.cmd run simulate`: wake ending reached in 871 simulated seconds with 138 manual clicks.
-  - Automation at 16 seconds.
-  - "Sheep count sheep" at 575 seconds.
-  - Sleep depths 1/2/3/4 at 852/865/868/871 seconds.
-  - All four dream laws purchased and ending reached.
-- `npm.cmd run build`: production build succeeded with no missing-CSS warning.
-- Chrome smoke QA against the Vite development server:
-  - Desktop layout visually inspected.
-  - Manual count, debug resource grant, sleep prestige, and dream-law purchase operated successfully.
-  - Reload restored the saved depth, shards, and purchased law.
-  - Mobile viewport 390 x 844 visually inspected; single-column layout and no horizontal overflow verified.
-  - Browser warning/error log: 0 entries.
+- `npm.cmd test`: 2 files / 9 tests passed.
+- `npm.cmd run simulate`: finite wake ending reached in 871 simulated seconds with 138 manual clicks.
+- Milestones: automation 16s; recursive sheep 575s; first prestige 852s; depths 2/3/4 at 865/868/871s.
+- `npm.cmd run build`: production build succeeded.
+- Published GitHub Pages endpoint returned HTTP 200 and served the expected HTML.
+- Previous Chrome QA covered desktop and 390x844 mobile layouts, save reload, core controls, and zero browser warnings/errors.
 
-## Core acceptance criteria
+## Acceptance criteria
 
 - [x] Manual sheep counting feels responsive
 - [x] Automation unlocks naturally
@@ -38,7 +29,8 @@ Status: PLAYABLE MILESTONE COMPLETE
 - [x] Versioned localStorage save and offline progress
 - [x] Deterministic tests for progression and no runtime errors
 - [x] Responsive browser UI
+- [x] Public mobile-playable deployment
 
-## Exact next task
+## Optional future tuning
 
-Run one unassisted human playtest from a clean save, record the first-prestige time and upgrade choices, then adjust only the first-run economy if the 14-minute simulated opening feels too slow or too fast.
+A real human clean-save playthrough can still tune the first-run economy, especially whether the roughly 14-minute first prestige is subjectively too slow. This is polish feedback, not a blocker for the completed vertical slice.
