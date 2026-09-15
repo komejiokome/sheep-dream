@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10152a" />
+  <title>ひつじを数える</title>
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero card">
+      <div class="moon" aria-hidden="true"></div>
+      <div class="stars" aria-hidden="true"></div>
+      <p class="eyebrow">SHEEP DREAM</p>
+      <h1>ひつじを数える</h1>
+      <p id="story" class="story">羊を一匹ずつ数えてください。</p>
+      <div class="counter-wrap" aria-live="polite">
+        <div id="sheep-count" class="sheep-count">0</div>
+        <div class="counter-label">ひつじ</div>
+      </div>
+      <button id="count-button" class="count-button" type="button">
+        <span class="button-sheep">🐑</span><span>羊を数える</span>
+      </button>
+      <div id="pasture" class="pasture" aria-hidden="true"><div class="fence">╫　╫　╫　╫　╫　╫</div></div>
+      <div class="rate-line"><span id="click-value">1 / クリック</span><span id="auto-rate">0 / 秒</span></div>
+    </section>
+    <section class="grid">
+      <article class="card progress-card">
+        <div class="section-heading"><div><p class="eyebrow">SLEEP</p><h2>眠りの深さ <span id="sleep-depth">0</span></h2></div><span id="dream-shards" class="pill">夢のかけら 0</span></div>
+        <div class="progress-track" role="progressbar" aria-label="次の眠りまでの進捗" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="sleep-progress" class="progress-fill"></div></div>
+        <p id="sleep-target" class="muted">次の眠りまで 2,400匹</p>
+        <button id="deepen-button" class="secondary-button" type="button" disabled>もっと深く眠る</button>
+      </article>
+      <article class="card"><p class="eyebrow">UPGRADES</p><h2>眠り支度</h2><div id="upgrades" class="stack"></div></article>
+      <article class="card"><p class="eyebrow">DREAM RULES</p><h2>夢の法則</h2><p class="muted">深く眠るほど、羊の数え方そのものを変えられる。</p><div id="laws" class="stack"></div></article>
+      <article class="card"><p class="eyebrow">MEMORY</p><h2>寝言</h2><div id="event-log" class="event-log"></div></article>
+    </section>
+    <section id="wake-card" class="card wake-card hidden"><p class="eyebrow">MORNING</p><h2>もう、十分に数えた。</h2><p>月も雲も羊なら、そろそろ起きてもいい。</p><button id="wake-button" class="wake-button" type="button">起きる</button></section>
+    <section id="ending" class="ending hidden" aria-live="polite"><div class="ending-inner"><p class="eyebrow">GOOD MORNING</p><h2>よく寝ました。</h2><div id="ending-summary"></div></div></section>
+    <aside id="debug-panel" class="debug-panel hidden"><strong>DEBUG</strong><button data-debug="boost" type="button">資源を足す</button><button data-debug="prestige" type="button">Prestige可能にする</button><button data-debug="reset" type="button">セーブ削除</button></aside>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

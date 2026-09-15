@@ -1,0 +1,21 @@
+{
+  "name": "sheep-dream",
+  "version": "1.0.0",
+  "description": "眠りの深さを進める、短編インクリメンタルゲーム",
+  "scripts": {
+    "test": "vitest run",
+    "simulate": "node scripts/pacing.mjs",
+    "dev": "vite",
+    "build": "vite build",
+    "testwatch": "vitest",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "vite": "^8.3.0",
+    "vitest": "^5.0.1"
+  }
+}
