@@ -65,3 +65,11 @@ For this short game, target frequent early events and increasing event significa
 ## Redesign requirement
 
 Do not solve the 5/100 result primarily by lengthening targets or weakening multipliers. At least two middle/late phases must gain genuinely new mechanics or generator relationships, and at least one old action must become obsolete/automated as the player's attention moves elsewhere. The final "everything can count as sheep" state must be played, not merely unlocked immediately before the ending.
+
+## 2026-09-16 reference check: Act 1 implementation gate
+
+Fresh source check reinforced the v3 direction rather than suggesting more scalar tuning. Amir Rajan described mobile A Dark Room pacing as needing to progress quickly without confusing the player, and described the game opening from a one-button surface into a substantially more complex game. Frank Lantz describes Universal Paperclips as beginning with manual clips, then automation and escalating scope; contemporary descriptions emphasize pattern/repetition/variation and deliberate gear shifts. Pecorella Part II explicitly contrasts the standard many-generators-to-one-currency model with alternative growth structures; Part III treats prestige as a loop/pattern design problem. Antimatter Dimensions' Infinity Dimensions explicitly use higher tiers producing lower tiers. Cookie Clicker's current wiki states ascension resets current progress while permanent heavenly upgrades persist, and its guide explicitly says overshooting ascension milestones need not slow progress if later important upgrades are bought. Realm Grinder's Reincarnation table schedules Challenges, Research, factions, Ascensions, and Lineages across reset milestones.
+
+**Lead inference:** the highest-impact next slice remains the Act 1 generator chain. It simultaneously changes the resource relationship, moves attention away from raw tapping, and makes the fiction `羊が羊を数える` mechanically true. No duration tuning should precede this slice.
+
+Implementation ownership and acceptance criteria are in `docs/delegation-act1.md`. The lead must reject any implementation that represents counting sheep only as a multiplier, or that lets fast input skip seeing the new relationship.
