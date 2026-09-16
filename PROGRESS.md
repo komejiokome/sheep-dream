@@ -1,6 +1,6 @@
-# Sheep Dream - Progress
+﻿# Sheep Dream - Progress
 
-Status: NEEDS HUMAN REPLAY — v2 implementation and automated/browser checks passed; do not mark complete yet.
+Status: NEEDS HUMAN REPLAY 窶・v2 implementation and automated/browser checks passed; do not mark complete yet.
 
 ## v2 improvement iteration - 2026-09-16
 
@@ -34,7 +34,7 @@ The v1 baseline completed in 871 seconds but split its depths 852 / 13 / 3 / 3 s
 - Chrome desktop: stage sheep and count button were both visible in a 1920 x 911 viewport.
 - Chrome 390 x 844: document exactly matched the viewport; all upgrade buttons and the count button were visible with no page scroll.
 - Chrome 320 x 568: document exactly matched the viewport; all upgrade buttons, rate strip, and count button remained visible.
-- Browser interaction: 10 rapid clicks produced exactly 10 click-value gains; tabs, prestige enablement, automatic law-tab handoff, save migration, and depth 1 → 2 presentation were exercised.
+- Browser interaction: 10 rapid clicks produced exactly 10 click-value gains; tabs, prestige enablement, automatic law-tab handoff, save migration, and depth 1 竊・2 presentation were exercised.
 - Browser console: zero warnings and zero errors.
 
 ## Remaining acceptance gate
@@ -42,17 +42,15 @@ The v1 baseline completed in 871 seconds but split its depths 852 / 13 / 3 / 3 s
 - [x] Automated low / normal / fast pacing checks
 - [x] 10 taps/sec does not collapse the progression curve
 - [x] Useful capped prestige overflow
-- [x] v1 → v2 save migration
+- [x] v1 竊・v2 save migration
 - [x] Mobile no-scroll core flow at 390 x 844 and 320 x 568
 - [x] Desktop/mobile browser smoke checks
 - [ ] Clean-save human replay on a physical touch device
 - [ ] Human confirmation that the 22-minute normal model feels restful rather than slow
-- [ ] Human confirmation that 2–3 finger tapping does not zoom on target iOS/Android hardware
+- [ ] Human confirmation that 2窶・ finger tapping does not zoom on target iOS/Android hardware
 
 Human replay remains required by the brief, so this iteration is intentionally not marked COMPLETE.
 
-## 初学者向けメモ
+## 蛻晏ｭｦ閠・髄縺代Γ繝｢
 
-- 「シミュレーション」は、人が押す速さをプログラムで再現して、ゲームが途中で止まったり一瞬で終わったりしないか確認するテストです。
-- 「セーブ移行」は、以前の版で遊んだ記録を消さずに、新しい版の保存形式へ読み替える仕組みです。
-- 自動テストとブラウザ確認が通っても、実際の指で遊んだ感覚までは判断できません。そのため最後に人のリプレイが必要です。
+- 縲後す繝溘Η繝ｬ繝ｼ繧ｷ繝ｧ繝ｳ縲阪・縲∽ｺｺ縺梧款縺咎溘＆繧偵・繝ｭ繧ｰ繝ｩ繝縺ｧ蜀咲樟縺励※縲√ご繝ｼ繝縺碁比ｸｭ縺ｧ豁｢縺ｾ縺｣縺溘ｊ荳迸ｬ縺ｧ邨ゅｏ縺｣縺溘ｊ縺励↑縺・°遒ｺ隱阪☆繧九ユ繧ｹ繝医〒縺吶・- 縲後そ繝ｼ繝也ｧｻ陦後阪・縲∽ｻ･蜑阪・迚医〒驕翫ｓ縺險倬鹸繧呈ｶ医＆縺壹↓縲∵眠縺励＞迚医・菫晏ｭ伜ｽ｢蠑上∈隱ｭ縺ｿ譖ｿ縺医ｋ莉慕ｵ・∩縺ｧ縺吶・- 閾ｪ蜍輔ユ繧ｹ繝医→繝悶Λ繧ｦ繧ｶ遒ｺ隱阪′騾壹▲縺ｦ繧ゅ∝ｮ滄圀縺ｮ謖・〒驕翫ｓ縺諢溯ｦ壹∪縺ｧ縺ｯ蛻､譁ｭ縺ｧ縺阪∪縺帙ｓ縲ゅ◎縺ｮ縺溘ａ譛蠕後↓莠ｺ縺ｮ繝ｪ繝励Ξ繧､縺悟ｿ・ｦ√〒縺吶・
